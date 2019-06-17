@@ -1,22 +1,60 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
 <title>Marek Forst</title>
+<link rel="stylesheet" href="styles.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
-<body>
-<h1>Front page</h1>
-<ul>
-  <li><a href="index.html">Front page</a></li>
-  <li><a href="aboutMe.html">About Me</a></li>
-  <li><a href="myApps.html">My applications</a></li>
-  <li><a href="downloads.html">Downloads</a></li>
-</ul>
+<body >
 
-<p style="color:red">This will look cool</p>
-<a href="https://www.w3schools.com">I've just learnt links.</a><br>
-<img src="https://cdn-images-1.medium.com/max/2600/1*TYAzzTJ60x-qg5N81ElU9A.png" alt="hacker" width="200" height="100">
-<p>and images</p>
-<button >And buttons</button>
+<div class="header flex-container">
+  <a href="#main">main</a>
+<h1>Mára srostl</h1>
+</div><div id="navbar">
+  <a href="#aa" >Hlavni</a>
+  <a href="#" class="active">Aplikace</a>
+  <a href="#">Neco</a>
+  <a href="#">Kokos</a>
+</div>
 
+<div class="main">
+  <p >
+  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed consectetur justo a libero sagittis aliquet. Donec ipsum est, imperdiet ac elementum id, consequat sit amet turpis. Nunc rhoncus posuere sem, et placerat ante auctor sed. Vivamus ultricies, tortor non pellentesque lacinia, nisl mauris sagittis sem, id gravida dolor augue in elit. Praesent ex nunc, commodo vitae tincidunt at, egestas eu ante. Maecenas tempor nisl vel porttitor posuere. Maecenas id dictum risus. Donec imperdiet et nisi vitae malesuada. Donec rhoncus vestibulum ipsum sit amet mollis. Duis viverra risus blandit magna viverra, a scelerisque ipsum aliquam. In consequat dolor id dui pellentesque, at rutrum augue varius. Nulla orci lacus, consequat a lectus id, cursus iaculis urna. Nam non sem nec sem tincidunt aliquet at eget odio. Mauris malesuada mi finibus, ultrices mauris vel, scelerisque velit. Vivamus arcu nulla, eleifend sagittis dignissim et, venenatis eget enim.
+  </p>
+
+  <p>
+  Aenean bibendum felis eu luctus porta. Integer porta, lorem eu bibendum ultrices, justo elit pretium velit, ut volutpat ipsum libero eget lectus. Fusce ac turpis et massa efficitur euismod ut sit amet mauris. Integer sit amet odio sit amet magna semper viverra. Donec sit amet magna lacus. Cras facilisis nunc id ex vehicula, a sodales dolor faucibus. Proin eu odio a nulla rutrum pellentesque. Vivamus fringilla nunc sagittis eros vestibulum, ac porta enim pharetra. Pellentesque sit amet tellus dapibus, egestas justo eget, elementum tellus. Nullam dictum a urna eget vulputate. Ut congue nibh sem, sit amet molestie nibh lobortis quis. Curabitur et sapien est. Integer porttitor scelerisque turpis, at scelerisque enim efficitur eu. Phasellus tincidunt purus tellus, eu condimentum justo vulputate quis. Sed dolor velit, ornare id lorem quis, commodo tincidunt tortor.
+  </p>
+<p>
+Curabitur maximus odio sed consectetur porttitor. Nam quam augue, ullamcorper non nisi eu, ultricies pellentesque arcu. Aenean tempor tincidunt ex, quis molestie metus ornare ut. In quis imperdiet sem, fermentum malesuada diam. Aenean eu ante leo. Aliquam nulla turpis, dignissim vitae gravida in, mattis vitae nisi. Suspendisse ultricies, ipsum vitae ultrices congue, lacus sapien maximus enim, et maximus turpis lectus at dui. Aenean urna massa, blandit eu ultrices suscipit, porttitor id enim. Aenean sit amet consequat eros. Maecenas tristique consequat malesuada. Quisque in purus egestas, cursus nibh et, commodo ante. Nullam ullamcorper gravida nisi eget tristique. Aenean at varius urna. Suspendisse mattis, tellus at porttitor tincidunt, dolor odio pretium quam, quis aliquet ipsum orci at elit. Mauris sit amet feugiat tortor, et consequat lorem. Cras in arcu justo.
+</p>
+<p>
+Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Sed sem est, efficitur non quam sit amet, bibendum ornare quam. Donec fringilla sapien in nisi efficitur rhoncus. Mauris blandit orci eu purus aliquet lobortis. Nulla ac venenatis ligula. Quisque nec urna dictum, sollicitudin justo a, auctor metus. Aliquam placerat ullamcorper leo eu fringilla. Praesent fringilla ex nisi. Morbi nec quam massa. Cras auctor velit vel enim dignissim, a gravida diam ultrices. Sed nec elit vulputate, mollis tellus porta, egestas nulla. Integer vel porta libero. Proin nec congue est. In tincidunt diam sed metus volutpat tristique. Phasellus at dui blandit, condimentum orci non, facilisis nibh.
+</p>
+<p>
+Pellentesque et porttitor enim, quis eleifend est. Maecenas fringilla vel elit sit amet vehicula. Etiam eu posuere sapien. Maecenas eget turpis augue. Mauris faucibus mattis tortor ac blandit. Pellentesque semper massa eget purus porta, non hendrerit odio efficitur. Nunc ac augue sodales, ultricies metus eget, pellentesque lectus. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aenean et quam quis nunc cursus dignissim eu vel lacus.
+</p>
+</div>
+<div class="footer">
+
+<p style="padding: 0px; margin: 0px 0px 0px 10px">	&copy; Mára je borci</p>
+</div>
+
+<script>
+var prevScrollpos = window.pageYOffset;
+window.onscroll = function() {
+var currentScrollPos = window.pageYOffset;
+  if (prevScrollpos > currentScrollPos) {
+    document.getElementById("navbar").style.top = "0";
+  } else {
+    var a = document.getElementById("navbar").clientHeight+4;
+    document.getElementById("navbar").style.top = "-" +a+"px";
+
+
+  }
+  prevScrollpos = currentScrollPos;
+}
+</script>
 </body>
 </html>
